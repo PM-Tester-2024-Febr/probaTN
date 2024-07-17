@@ -13,8 +13,8 @@ class TestRectangle(object):
         self.browser.set_window_size(1024,800)
         self.browser.get('https://high-flyer.hu/hetihazi/feladat1_teglalap.html')
 
-#    def teardown_method(self):
-#        self.browser.quit()
+    def teardown_method(self):
+        self.browser.quit()
 
 
     def test_rectangle_positive(self):
