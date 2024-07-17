@@ -9,7 +9,6 @@ class TestRectangle(object):
         options.add_experimental_option('detach', True)
         self.browser = webdriver.Chrome(options=options)
         options.add_argument('--headless')
-        self.browser.maximize_window()
         self.browser.set_window_size(1024,800)
         self.browser.get('https://high-flyer.hu/hetihazi/feladat1_teglalap.html')
 
